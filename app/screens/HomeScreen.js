@@ -1,16 +1,10 @@
 import React from 'react';
-import { Button, Text, StyleSheet, SafeAreaView } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { Button, Text, StyleSheet, SafeAreaView, View } from 'react-native';
 
 function HomeScreen(props) {
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Is this working lol</Text>
-            <Button
-                title="Go to Profile"
-                onPress={() => props.navigation.navigate('Profile')}
-            />
+            <Text>HomeScreen working</Text>
         </SafeAreaView>
     );
 }

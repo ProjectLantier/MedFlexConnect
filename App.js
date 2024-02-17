@@ -1,22 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import HomeScreen from './app/screens/HomeScreen.js';
-import ProfileScreen from './app/screens/ProfileScreen.js';
-
-const Tab = createBottomTabNavigator();
+import Navigation from './Navigation.js';
 
 export default function App() {
   return (
-    <NavigationContainer>
-      <Tab.Navigator initialRouteName="Home">
-        <Tab.Screen name="Home" component={HomeScreen} />
-        <Tab.Screen name="Profile" component={ProfileScreen} />
-      </Tab.Navigator>
-    </NavigationContainer>
+  <Navigation></Navigation>
     
   );
 }
