@@ -11,6 +11,7 @@ import StartTreatmentScreen from './app/screens/StartTreatmentScreen.js';
 import CalendarScreen from './app/screens/CalendarScreen.js';
 import JournalScreen from './app/screens/JournalScreen.js';
 import HistoryScreen from './app/screens/HistoryScreen.js';
+import LoginScreen from './app/screens/LoginScreen.js';
 
 //Tab Bottom
 const Tab = createBottomTabNavigator();
